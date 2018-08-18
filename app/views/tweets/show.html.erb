@@ -1,3 +1,14 @@
+<div class="snow_drop">
+  <div class="inner">
+    <div class="flake1"><%= image_tag 'IMG_0485.JPG', class: 'radius_img' %></div>
+    <div class="flake2"><%= image_tag 'IMG_0485.JPG', class: 'radius_img' %></div>
+    <div class="flake3"><%= image_tag 'IMG_0485.JPG', class: 'radius_img' %></div>
+    <div class="flake4"><%= image_tag 'IMG_0485.JPG', class: 'radius_img' %></div>
+    <div class="flake5"><%= image_tag 'IMG_0485.JPG', class: 'radius_img' %></div>
+    <div class="flake6"><%= image_tag 'IMG_0485.JPG', class: 'radius_img' %></div>
+  </div>
+</div>
+
 <div class ="contents row">
   <div class="content__post" style="background-image: url(<%= @tweet.image %>);">
     <% if current_user && @tweet.user_id == current_user.id %>
@@ -37,3 +48,4 @@
     </div>
   </div>
 </div>
+

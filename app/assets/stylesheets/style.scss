@@ -377,3 +377,73 @@ footer {
     text-align: center;
   }
 }
+
+.radius_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.snow_drop .inner div {
+  transform-origin: 0px 0px;
+  animation-name: Drop;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+  display: block;
+}
+.flake1 {
+  left: 300px;
+  animation-duration: 5.0s;
+}
+.flake2 {
+  left: 450px;
+  animation-duration: 4.2s;
+  animation-delay: 0.2s;
+}
+.flake3 {
+  left: 550px;
+  animation-duration: 3.5s;
+  animation-delay: 0.4s;
+}
+.flake4 {
+  left: 700px;
+  animation-duration: 5.4s;
+}
+.flake5 {
+  left: 8500px;
+  animation-duration: 4.5s;
+  animation-delay: 0.8s;
+}
+.flake6 {
+  left: 1000px;
+  animation-duration: 2.8s;
+  animation-delay: 0.2s;
+}
+
+@keyframes Drop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(200px);
+    opacity: 0.2;
+  }
+  40% {
+    transform: translateY(400px);
+    opacity: 0.6;
+  }
+  60% {
+    transform: translateY(600px);
+    opacity: 0.4;
+  }
+  80% {
+    transform: translateY(800px);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}
