@@ -648,9 +648,23 @@ ul li {
     left: 25%;
     width: 50%;
     height: 50%;
-    background-color: white;
-    opacity: 0.8;
+  /*  background-color: white;
+    opacity: 0.8;*/
     /*黒背景より前に*/
     z-index: 30;
     text-align: center;
+    RGBA(215,24,0,.68);
+    background-color: white;
+}
+
+.close_button {
+  text-align: left;
+  z-index: 40;
+  width: 15px;
+  height: 15px;
+}
+
+.popupImage {
+  margin-top: 10px;
+  z-index: 35;
 }
