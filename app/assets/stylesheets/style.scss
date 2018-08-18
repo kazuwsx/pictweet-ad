@@ -382,6 +382,9 @@ footer {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  position: relative;
+  z-index: 100;
+  animation: spin 1.5s linear infinite;
 }
 .snow_drop .inner div {
   transform-origin: 0px 0px;
@@ -393,7 +396,7 @@ footer {
   display: block;
 }
 .flake1 {
-  left: 300px;
+  left: 250px;
   animation-duration: 5.0s;
 }
 .flake2 {
@@ -416,7 +419,7 @@ footer {
   animation-delay: 0.8s;
 }
 .flake6 {
-  left: 1000px;
+  left: 1050px;
   animation-duration: 2.8s;
   animation-delay: 0.2s;
 }
@@ -428,22 +431,30 @@ footer {
   }
   20% {
     transform: translateY(200px);
-    opacity: 0.2;
+    opacity: 0.6;
   }
   40% {
     transform: translateY(400px);
-    opacity: 0.6;
+    opacity: 1;
   }
   60% {
     transform: translateY(600px);
-    opacity: 0.4;
+    opacity: 0.8;
   }
   80% {
     transform: translateY(800px);
-    opacity: 0.2;
+    opacity: 0.6;
   }
   100% {
     transform: translateY(1000px);
-    opacity: 0;
+    opacity: 0.4;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
