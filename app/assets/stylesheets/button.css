@@ -1,0 +1,21 @@
+/* button {
+  width:150px;
+  height:50px;
+  border-radius:5px;
+  color:#FFF;
+  font-weight:bold;
+  background-color:#00B285;
+  transition:all 0.3s;
+  position:relative;
+}
+button:before {
+  border-radius:5px;
+  content:url("shuzo.png");
+  position:absolute;
+  top:17px;
+  left:-120%;
+  transition:all 0.5s;
+}
+button:hover:before {
+  left:120%;
+} */

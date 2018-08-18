@@ -1,23 +1,23 @@
-$(document).ready(function(envet) {
+// $(document).ready(function(envet) {
 
-  var eventCount = 0;
+//   var eventCount = 0;
 
-  if(eventCount === 1) {
+//   if(eventCount === 1) {
 
-    event.preventDefault();
+//     event.preventDefault();
 
-  } else {
+//   } else {
 
-    setInterval(function(){
-      $(".popup").fadeIn();
-    },1000);
+//     setInterval(function(){
+//       $(".popup").fadeIn();
+//     },1000);
 
-    $(".black_cover,.close_button").click(function(){
-        $(".popup").fadeOut();
-    });
+//     $(".black_cover,.close_button").click(function(){
+//         $(".popup").fadeOut();
+//     });
 
-    eventCount++;
+//     eventCount++;
 
-  }
+//   }
 
-});
+// });
