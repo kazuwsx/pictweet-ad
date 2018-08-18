@@ -714,8 +714,9 @@ ul li {
 .close_button {
   text-align: left;
   z-index: 40;
-  width: 15px;
-  height: 15px;
+  width: 3px;
+  height: 3px;
+  font-size: 0.2px;
 }
 
 .popupImage {
