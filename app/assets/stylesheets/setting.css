@@ -4,25 +4,61 @@
  * ========================================================================== */
 /*
  * Correct `block` display not defined in IE 8/9. */
- #stalker {
+.randomWrap {
+  background-color: #ccc;
+  position:relative;
+  height: 300px;
+  margin: 24px 0;
+}
+
+#randomMove2 {
+  position: absolute;
+  transition: .1s;
+  transform: translate(-200%, -200%);
+  width : 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#stalker {
   position: fixed;
   transition: left 0.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*1.5s は移動時間*/
-  -webkit-transition: left 1.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*webkit 系のクロスブラウザ*/
+  -webkit-transition: left 1.0s ease-in-out 0s, top 1.5s ease-in-out 0s; /*webkit 系のクロスブラウザ*/
   z-index: 9999;
 }
 #stalker2 {
   position: fixed;
   transition: left 0.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*1.5s は移動時間*/
-  -webkit-transition: left 2.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*webkit 系のクロスブラウザ*/
+  -webkit-transition: left 1.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*webkit 系のクロスブラウザ*/
   z-index: 9999;
 }
 #stalker3 {
   position: fixed;
   transition: left 0.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*1.5s は移動時間*/
+  -webkit-transition: left 2.0s ease-in-out 0s, top 1.5s ease-in-out 0s; /*webkit 系のクロスブラウザ*/
+  z-index: 9999;
+}
+
+#stalker4{
+  position: fixed;
+  transition: left 0.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*1.5s は移動時間*/
+  -webkit-transition: left 2.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*webkit 系のクロスブラウザ*/
+  z-index: 9999;
+}
+#stalker5{
+  position: fixed;
+  transition: left 0.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*1.5s は移動時間*/
+  -webkit-transition: left 3.0s ease-in-out 0s, top 1.5s ease-in-out 0s; /*webkit 系のクロスブラウザ*/
+  z-index: 9999;
+}
+#stalker6 {
+  position: fixed;
+  transition: left 0.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*1.5s は移動時間*/
   -webkit-transition: left 3.5s ease-in-out 0s, top 1.5s ease-in-out 0s; /*webkit 系のクロスブラウザ*/
   z-index: 9999;
 }
- article,
+article,
 aside,
 details,
 figcaption,
@@ -666,9 +702,23 @@ ul li {
     left: 25%;
     width: 50%;
     height: 50%;
-    background-color: white;
-    opacity: 0.8;
+  /*  background-color: white;
+    opacity: 0.8;*/
     /*黒背景より前に*/
     z-index: 30;
     text-align: center;
+    RGBA(215,24,0,.68);
+    background-color: white;
+}
+
+.close_button {
+  text-align: left;
+  z-index: 40;
+  width: 15px;
+  height: 15px;
+}
+
+.popupImage {
+  margin-top: 10px;
+  z-index: 35;
 }
