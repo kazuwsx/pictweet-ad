@@ -1,23 +1,24 @@
 $(document).ready(function(envet) {
 
-  var eventCount = 0;
+  var setTimer;
 
-  if(eventCount === 1) {
 
-    event.preventDefault();
+  setTimer = setInterval(function(){
+    $(".popup").fadeIn();
+  },1000);
 
-  } else {
-
-    setInterval(function(){
-      $(".popup").fadeIn();
-    },1000);
-
-    $(".black_cover,.close_button").click(function(){
+  function FullScreanAdEvent() {
+    $(document).on("click", function(event) {
+      if($(event.target).closest(".close_button").length) {
         $(".popup").fadeOut();
+        clearInterval(setTimer);
+        $(document).off("click");
+      } else {
+        alert("しっかりボタンを押しましょう。");
+      }
     });
-
-    eventCount++;
-
   }
+
+  FullScreanAdEvent();
 
 });
